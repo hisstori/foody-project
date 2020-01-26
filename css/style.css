@@ -1,0 +1,121 @@
+/* {
+	box-sizing: border-box;
+}*/
+
+main {
+	width: 700px;
+}
+
+a {
+ 	font-family: 'Noto Sans New Tai Lue', sans-serif;
+ 	text-decoration: none;
+ 	color: #ffffff;
+}
+
+ol {
+	display: flex;
+	justify-content: space-around;
+	color: white;
+}
+
+img {
+	padding: 10px;
+	margin: 20px;
+	width: 250px;
+	height: 220px;
+}
+
+h3 {
+	text-align: left;
+}
+
+li {
+	text-align: left;
+	display: block;
+}
+
+#abt {
+	height: 350px;
+	width: 350px;
+	float: right;
+	margin: 20px 0 0 150px;
+	padding: 10px 0 10px 20px;
+}
+
+.buttons {
+	color: #000000;
+	padding: 10px;
+	margin: 0 0 0 20px;
+}
+
+.nav-bar {
+	width: 700px;
+	background-color: black;
+	border: solid black 1px;
+	margin: auto;
+	text-align: center;
+}
+
+.header {
+	height: 400px;
+	width: 900px;
+	background-image: url("../images/header.png");
+	background-size: cover;
+	margin: auto;
+}
+
+.overlay {
+	height: 360px;
+	width: 785px;
+	background-image: url("../images/head-overlay.png");
+	background-size: cover;
+	margin: auto;
+}
+
+.front {
+	font-size: 15px;
+	width: 850px;
+	margin: auto;
+}
+
+.dish {
+	text-align: center;
+	background-image: url("../images/dish-back.png");
+	background-size: cover;
+	height: 350px;
+	width: 900px;
+	margin: auto;
+}
+
+.dcont {
+	display: inline-grid;
+	grid-template-columns: 200px 200px 200px 200px;
+
+}
+
+.menu {
+	background-image: url("../images/menu-back.png");
+	background-size: contain;
+	background-repeat:;
+	height: 900px;
+	width: 900px;
+}
+
+.plates {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.booking {
+	background-image: url("../images/footer.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 700px;
+	width: 900px;
+}
+
+.clearfix {
+  content: "";
+  clear: both;
+  display: table;
+}
