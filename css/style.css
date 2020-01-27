@@ -15,14 +15,14 @@ ol {
 	color: white;
 }
 
-img {
+/*img {
 	object-fit: contain;
 	width: 350px;
 	height: 325px;
 	padding: 10px;
 	margin: 120px 30px 10px 30px;
 	text-align: center;
-}
+}*/
 
 p {
 	margin-left: 50px;
@@ -107,7 +107,7 @@ header {
 	width: 785px;
 	background-image: url("../images/head-overlay.png");
 	background-size: cover;
-	margin: 0 auto;
+	margin: auto auto 200px;
 }
 
 .front {
@@ -139,7 +139,6 @@ header {
 
 .dish {
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -252,6 +251,12 @@ header {
   display: table;
 }
 
-@media screen {
-	
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px) {
+  	* { 
+  	font-size: 22px;
+  	width: 100vw;
+
 }
+  }
