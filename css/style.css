@@ -1,4 +1,4 @@
- a {
+a {
   font-family: "Noto Sans New Tai Lue", sans-serif;
   text-decoration: none;
   color: #ffffff;
@@ -50,7 +50,7 @@ hr {
 */ ul,
 li {
   text-align: left;
-  display: block;
+  /* display: block; */
   font-size: 11px;
   width: 100%;
   max-width: 500px;
@@ -59,10 +59,11 @@ li {
 
 header {
   height: 400px;
-  width: 80%;
+  width: 900px;
   background-image: url("../images/header.png");
-  background-size: cover;
-  margin: 0 auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin:  auto;
 }
 
 #abt {
@@ -81,7 +82,7 @@ header {
 }
 
 .nav-bar {
-  width: 100%;
+  width: 50%;
   background-color: black;
   border: solid black 1px;
   margin: auto;
@@ -90,10 +91,10 @@ header {
 
 .overlay {
   height: 350px;
-  width: 80%;
+  width: 900px;
   background-image: url("../images/head-overlay.png");
   background-size: cover;
-  margin: auto auto 200px;
+  margin: auto auto 200px 80px;
 } /*
 
 .front {
@@ -103,34 +104,35 @@ header {
 	margin: 0 auto;
 }
 */
-.dishes {
-	text-align: center;
-	background-image: url("../images/dish-back.png");
-	background-size: stretch;
-	height: 580px;
-	width: 100%;
-	margin: auto;
-}
+/* .dishes {
+  text-align: center;
+  background-image: url("../images/dish-back.png");
+  background-size: stretch;
+  height: 580px;
+  width: 100%;
+  margin: auto;
+} */
 
 .imgs {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 350px;
-	width: 100%;
-	padding: 10px;
-	color: #000000;
-	/* margin: 50px 150px 50px 120px; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  align-items: center;
+  height: 350px;
+  width: 100%;
+  padding: 10px;
+  color: #000000;
+  /* margin: 50px 100px 50px 120px; */
 }
-/*
-.dish {
+
+ .dish {
 	display: flex;
 	align-items: center;
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin: 200px 10px 30px 10px;
 }
-*/
+
 #d1 {
   background-image: url(../images/dish.png);
   border: solid white 3px;
@@ -175,10 +177,11 @@ header {
   min-width: 75px;
 }
 
-.card {
-	font-size: 15px;
-	margin-top: 70px; 
-}
+/* .card{
+  font-size: 15px;
+  margin-top: 30px; 
+  width: 50%;
+} */
 
 */ .menu {
   text-align: center;
@@ -188,19 +191,21 @@ header {
   background-repeat: no-repeat;
   height: 80%;
   width: 100%;
-  margin: -20px auto auto auto;
+  /* margin: -20px auto auto auto; */
 }
 
 .top {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
+  flex-basis: 100%;
+  align-items: left;
+  /* width: 100%; */
 }
 
 .bot {
   display: flex;
   flex-direction: row;
+  flex-basis: 100%;
   align-items: left;
 }
 
@@ -209,32 +214,13 @@ header {
   font-size: 12px;
 }
 
-.entree {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-} /*
-
-.entre {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	width: 100%;
-}
-
-.container {
-	padding: 0 100px 10px 100px;
-	margin: 0 10px 0 0;
-}
-*/
 .booking {
   text-align: center;
   background-image: url("../images/footer.png");
   background-size: contain;
   background-repeat: no-repeat;
   height: 550px;
-  width: 100%;
+  width: 900px;
   margin: -50px auto auto auto;
 }
 
@@ -254,9 +240,28 @@ header {
   display: table;
 }
 
-@media only screen and (max-width: 620px) {
-  /* For mobile phones: */
+@media only screen and (max-width: 600px) {
+  #d1 #d2 #d3 #d4 {
+    display: none;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
   .page {
     width: 100%;
   }
+}
+@media only screen and(max-width: 768px) {
+  .top .bot {
+    max-width: 300px;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  ...;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
 }
